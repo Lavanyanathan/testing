@@ -5,17 +5,7 @@ require_once('lib.php');
 //include formclass.php
 global $DB, $COURSE, $PAGE, $OUTPUT, $CFG, $_REQUEST,$_SESSION ,$USER;
 require_once($CFG->dirroot . '/local/testimonial/form.php');
-?>
-<style>
 
-
-.fa-file-o:before {
-    content: "";
-    font-family: 'FontAwesome';
-}
-</style>
-
-<?php
 if (is_siteadmin()) {
     
     $PAGE->set_pagelayout('admin');
