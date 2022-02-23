@@ -1,0 +1,32 @@
+<!-- HTML code to implement the given year is 
+    leap year or not -->
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        JavaScript to check leap year
+    </title>
+</head>
+  
+<body>
+    Input Year: <input type="text" id = "year"/>
+      
+    <input type="button" id="button" onClick="isLeapYear()"
+            value="Check Leap Year">
+      
+    <p id="GFG"></p>
+      
+    <!-- JavaScript code to check given year is
+        leap year or not -->
+    <script>
+        function isLeapYear() {
+            var year= document.getElementById("year").value;
+              
+            document.getElementById("GFG").innerHTML 
+                = (year % 100 === 0) ? (year % 400 === 0)
+                                     : (year % 4 === 0);
+        }
+    </script>
+</body>
+  s
